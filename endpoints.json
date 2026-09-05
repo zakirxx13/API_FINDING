@@ -50,6 +50,11 @@
     "resourceType": "fetch"
   },
   {
+    "url": "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCv82eHAx0LaNvcJqOwumExKJen0_CzT1M",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
     "url": "https://toffeelive.com/en?_rsc=Lyst6QA1NcPcFUAu",
     "method": "GET",
     "resourceType": "fetch"
@@ -85,33 +90,18 @@
     "resourceType": "fetch"
   },
   {
-    "url": "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCv82eHAx0LaNvcJqOwumExKJen0_CzT1M",
+    "url": "https://www.google.com/measurement/conversion?random=1788614851337&cv=11&tid=G-02M4D9SN5F&fst=1788614851337&fmt=8&en=session_start&gtm=45je6921v9189838959za200zb9193602521zd9193602521xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&gacid=2063398602.1788614851&frm=0&tiba=NTV&gtm_ee=1&npa=0&pscdl=noapi&auid=856257573.1788614851&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=3",
     "method": "POST",
     "resourceType": "fetch"
   },
   {
-    "url": "https://toffeelive.com/en/movies?_rsc=Lyst6QA1NcPcFUAu",
-    "method": "GET",
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je6921v9189838959za200zb9193602521zd9193602521&_p=1788614848584&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=680173467&_eu=AAAAAGAC&_fid=dNKQRymAXUEIzj29THAZ-V&_prs=ok&cid=2063398602.1788614851&ec_mode=a&frm=0&pscdl=noapi&rcb=3&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115616985~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&sid=1788614851&sct=1&seg=0&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&dt=NTV&en=page_view&_fv=1&_nsi=1&_ss=2&_ee=1&ep.origin=firebase&tfd=5208",
+    "method": "POST",
     "resourceType": "fetch"
   },
   {
     "url": "https://toffeelive.com/en/plans?_rsc=Lyst6QA1NcPcFUAu",
     "method": "GET",
-    "resourceType": "fetch"
-  },
-  {
-    "url": "https://toffeelive.com/en?_rsc=TTJ1s5dTfNFF6o-3",
-    "method": "GET",
-    "resourceType": "fetch"
-  },
-  {
-    "url": "https://www.google.com/measurement/conversion?random=1788614513363&cv=11&tid=G-02M4D9SN5F&fst=1788614513363&fmt=8&en=session_start&gtm=45je6921v9189838959za200zb9193602521zd9193602521xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&gacid=810984302.1788614513&frm=0&tiba=NTV&gtm_ee=1&npa=0&pscdl=noapi&auid=1096580500.1788614513&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=13",
-    "method": "POST",
-    "resourceType": "fetch"
-  },
-  {
-    "url": "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je6921v9189838959za200zb9193602521zd9193602521&_p=1788614510552&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1520872309&_eu=AAAAAGAC&_fid=e5NGkrASBBVJCKcZkxLM_9&_prs=ok&cid=810984302.1788614513&ec_mode=a&frm=0&pscdl=noapi&rcb=13&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&sid=1788614513&sct=1&seg=0&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&dt=NTV&en=page_view&_fv=1&_nsi=1&_ss=2&_ee=1&ep.origin=firebase&tfd=4505",
-    "method": "POST",
     "resourceType": "fetch"
   },
   {
@@ -125,17 +115,7 @@
     "resourceType": "fetch"
   },
   {
-    "url": "https://toffeelive.com/en/drama?_rsc=TTJ1s5dTfNFF6o-3",
-    "method": "GET",
-    "resourceType": "fetch"
-  },
-  {
-    "url": "https://www.google.com/measurement/1p-conversion/?random=356829586&cv=11&tid=G-02M4D9SN5F&fst=1788614513363&fmt=8&en=session_start&gtm=45je6921v9189838959za200zb9193602521zd9193602521xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&gacid=810984302.1788614513&frm=0&tiba=NTV&gtm_ee=1&npa=0&pscdl=noapi&auid=1096580500.1788614513&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=13&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgji6rECCOjusQIIkuuxAgjJ47ECCJfUsQIIyduxAgjN5rECCLHhsQIIs-GxAgim3bECCLDesQIIgNuxAg&cerd=CgEA&fsk=ChEI8Pvu1AYQs9rt2tbvs4jvARIsALa_ygMv5199OYo6ZIEA2ZnQc-tdys1FEYjuyBNO94Zw3HKBeAvgQ3uXmNsaAmIn&pscrd=IhMI69vapcTXlgMV9i5ECB2kMgY2OhdodHRwczovL3RvZmZlZWxpdmUuY29tL0JXQ2hBSThQdnUxQVlRb3RtOXc1dVVpYzhHRWkwQU03TnJfZVFrOVdqY2Q3ZjIzWHhpMV9VdldHamlTNXlPTVVsRzJkZGVvVkUzTW9jdEJuTE9ydDA4U1VregwICWIICAAQABgAIAA",
-    "method": "GET",
-    "resourceType": "fetch"
-  },
-  {
-    "url": "https://toffeelive.com/en/watch/JS1AqZgBNnOkwJLWlwg-?_rsc=TTJ1s5dTfNFF6o-3",
+    "url": "https://toffeelive.com/en?_rsc=TTJ1s5dTfNFF6o-3",
     "method": "GET",
     "resourceType": "fetch"
   },
@@ -145,7 +125,17 @@
     "resourceType": "fetch"
   },
   {
-    "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/n_tv/playlist.m3u8?nocache=1788614513626",
+    "url": "https://www.google.com/measurement/1p-conversion/?random=183454237&cv=11&tid=G-02M4D9SN5F&fst=1788614851337&fmt=8&en=session_start&gtm=45je6921v9189838959za200zb9193602521zd9193602521xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&gacid=2063398602.1788614851&frm=0&tiba=NTV&gtm_ee=1&npa=0&pscdl=noapi&auid=856257573.1788614851&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=3&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgji6rECCOjusQIIkuuxAgjJ47ECCJfUsQIIyduxAgjN5rECCLHhsQIIs-GxAgim3bECCLDesQIIgNuxAgjL4bEC&cerd=CgSDsL4t&fsk=ChEI8Pvu1AYQs9rt2tbvs4jvARIsALa_ygOCc5tixM1uLUNNUMRFXN_cinRQNNKUZcoBRh8QIvPZ9oN-CUU5aZgaAsI3&pscrd=IhMI2J7txsXXlgMVm97OAB1P2jqgOhdodHRwczovL3RvZmZlZWxpdmUuY29tL0JWQ2hBSThQdnUxQVlRb3RtOXc1dVVpYzhHRWl3QU03TnJfUVdUNHp2RGVRN2FmcnI0OHo2dThtTDdBOFFhRUxNZXJyTmtVUVlqb2Q2M2RZTzZkaTl0QVF6DAgJYggIABAAGAAgAA",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/n_tv/playlist.m3u8?nocache=1788614851659",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/watch/JS1AqZgBNnOkwJLWlwg-?_rsc=TTJ1s5dTfNFF6o-3",
     "method": "GET",
     "resourceType": "fetch"
   },
@@ -185,6 +175,11 @@
     "resourceType": "fetch"
   },
   {
+    "url": "https://toffeelive.com/en/drama?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
     "url": "https://toffeelive.com/en/movies?_rsc=TTJ1s5dTfNFF6o-3",
     "method": "GET",
     "resourceType": "fetch"
@@ -200,12 +195,12 @@
     "resourceType": "fetch"
   },
   {
-    "url": "https://api-js.mixpanel.com/track/?verbose=1&ip=1&_=1788614516952",
+    "url": "https://api-js.mixpanel.com/track/?verbose=1&ip=1&_=1788614855062",
     "method": "POST",
     "resourceType": "xhr"
   },
   {
-    "url": "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je6921v9189838959za200zb9193602521zd9193602521&_p=1788614510552&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1520872309&_eu=AAAAAGQC&_fid=e5NGkrASBBVJCKcZkxLM_9&cid=810984302.1788614513&frm=0&pscdl=noapi&rcb=13&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en&gaf=2&_s=2&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&dt=NTV&dp=%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&sid=1788614513&sct=1&seg=0&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&en=page_viewed&_ee=1&ep.origin=firebase&ep.provider_id=toffee&ep.app_name=toffee-web-app&ep.app_version=5.1.0&ep.device_id=df239849-e37e-4dbe-919f-8425fe544fd3&ep.subscriber_type=ANONYMOUS&ep.connection=cellular&ep.page_name=Watch%20Details&ep.page_url=https%3A%2F%2Ftoffeelive.com%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&ep.page_id=wHLVIJ4B7a1HdMSjaGLJ&_et=4&tfd=9513",
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je6921v9189838959za200zb9193602521zd9193602521&_p=1788614848584&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=680173467&_eu=AAAAAGQC&_fid=dNKQRymAXUEIzj29THAZ-V&cid=2063398602.1788614851&frm=0&pscdl=noapi&rcb=3&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en&gaf=2&_s=2&tag_exp=115616985~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&dt=NTV&dp=%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&sid=1788614851&sct=1&seg=0&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&en=page_viewed&_ee=1&ep.origin=firebase&ep.provider_id=toffee&ep.app_name=toffee-web-app&ep.app_version=5.1.0&ep.device_id=6cf7152b-ec85-4064-ae60-38744691f761&ep.subscriber_type=ANONYMOUS&ep.connection=cellular&ep.page_name=Watch%20Details&ep.page_url=https%3A%2F%2Ftoffeelive.com%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&ep.page_id=wHLVIJ4B7a1HdMSjaGLJ&_et=5&tfd=10216",
     "method": "POST",
     "resourceType": "fetch"
   }
