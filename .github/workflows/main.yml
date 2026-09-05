@@ -1,12 +1,7 @@
-name: API Endpoint Finder
+name: Capture Public API Endpoints
 
 on:
   workflow_dispatch:
-    inputs:
-      target:
-        description: "Authorized website URL"
-        required: true
-        type: string
 
 permissions:
   contents: write
@@ -16,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -30,25 +25,14 @@ jobs:
           npm install playwright
           npx playwright install --with-deps chromium
 
-      - name: Verify AUTH_D
-        env:
-          AUTH_D: ${{ secrets.AUTH_D }}
-        run: |
-          if [ -z "$AUTH_D" ]; then
-            echo "AUTH_D is empty or unavailable."
-            exit 1
-          fi
-
-          echo "AUTH_D secret is available."
-          echo "Token value will not be printed."
-
       - name: Create capture script
-        env:
-          TARGET: ${{ inputs.target }}
         run: |
           cat > capture.js <<'EOF'
           const { chromium } = require("playwright");
           const fs = require("fs");
+
+          const TARGET =
+            "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ";
 
           const sensitive = new Set([
             "authorization",
@@ -60,24 +44,27 @@ jobs:
           ]);
 
           function sanitize(headers) {
-            const output = {};
+            const result = {};
 
             for (const [key, value] of Object.entries(headers)) {
-              output[key] =
+              result[key] =
                 sensitive.has(key.toLowerCase())
                   ? "[REDACTED]"
                   : value;
             }
 
-            return output;
+            return result;
           }
 
           async function main() {
+            console.log("Opening:", TARGET);
+
             const browser = await chromium.launch({
               headless: true
             });
 
             const context = await browser.newContext();
+
             const page = await context.newPage();
 
             const endpoints = new Map();
@@ -93,26 +80,39 @@ jobs:
               const url = request.url();
 
               endpoints.set(url, {
-                url: url,
+                url,
                 method: request.method(),
                 resourceType: type
               });
 
               headers.set(url, {
-                url: url,
+                url,
                 method: request.method(),
                 headers: sanitize(request.headers())
               });
+
+              console.log(
+                request.method(),
+                type,
+                url
+              );
             });
 
-            console.log("Opening authorized target...");
+            page.on("requestfailed", request => {
+              console.log(
+                "REQUEST FAILED:",
+                request.url(),
+                request.failure()?.errorText || ""
+              );
+            });
 
-            await page.goto(process.env.TARGET, {
+            await page.goto(TARGET, {
               waitUntil: "domcontentloaded",
               timeout: 30000
             });
 
-            await page.waitForTimeout(7000);
+            // Wait for JavaScript/network activity.
+            await page.waitForTimeout(10000);
 
             fs.writeFileSync(
               "endpoints.json",
@@ -148,11 +148,15 @@ jobs:
       - name: Run capture
         run: node capture.js
 
-      - name: Delete temporary script
-        if: always()
-        run: rm -f capture.js
+      - name: Show generated files
+        run: |
+          echo "===== endpoints.json ====="
+          cat endpoints.json
 
-      - name: Commit JSON files
+          echo "===== headers.json ====="
+          cat headers.json
+
+      - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email \
@@ -161,9 +165,9 @@ jobs:
           git add endpoints.json headers.json
 
           if git diff --cached --quiet; then
-            echo "No changes."
+            echo "No changes detected."
             exit 0
           fi
 
-          git commit -m "Update API endpoints"
+          git commit -m "Update captured API endpoints"
           git push
