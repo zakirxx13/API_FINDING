@@ -33,7 +33,7 @@ jobs:
 
       - name: Create capture script
         env:
-          TARGET: "https://YOUR-OWN-AUTHORIZED-SITE.example"
+          TARGET: "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ"
         run: |
           cat > capture.js <<'EOF'
           const { chromium } = require("playwright");
