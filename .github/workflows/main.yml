@@ -1,129 +1,113 @@
-name: Discover API Endpoints
+name: Capture Authorized API
 
 on:
   workflow_dispatch:
-    inputs:
-      target:
-        description: "Authorized website URL"
-        required: true
-        type: string
 
 permissions:
   contents: write
 
 jobs:
-  discover:
+  capture:
     runs-on: ubuntu-latest
 
     steps:
-      # -----------------------------
-      # 1. Checkout repository
-      # -----------------------------
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      # -----------------------------
-      # 2. Setup Node.js
-      # -----------------------------
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      # -----------------------------
-      # 3. Install Playwright
-      # -----------------------------
       - name: Install Playwright
         run: |
           npm init -y
           npm install playwright
           npx playwright install --with-deps chromium
 
-      # -----------------------------
-      # 4. Capture API requests
-      # -----------------------------
-      - name: Capture network API calls
+      - name: Create temporary session
         env:
-          TARGET: ${{ inputs.target }}
+          AUTH_D: ${{ secrets.AUTH_D }}
+        run: |
+          printf '%s' "$AUTH_D" > storage-state.json
+
+      - name: Create capture script
+        env:
+          TARGET: "https://YOUR-OWN-AUTHORIZED-SITE.example"
         run: |
           cat > capture.js <<'EOF'
           const { chromium } = require("playwright");
           const fs = require("fs");
 
+          const sensitive = new Set([
+            "authorization",
+            "cookie",
+            "set-cookie",
+            "proxy-authorization",
+            "x-api-key",
+            "x-auth-token"
+          ]);
+
+          function sanitize(headers) {
+            return Object.fromEntries(
+              Object.entries(headers).map(([key, value]) => [
+                key,
+                sensitive.has(key.toLowerCase())
+                  ? "[REDACTED]"
+                  : value
+              ])
+            );
+          }
+
           (async () => {
-            const target = process.env.TARGET;
-
-            if (!target) {
-              throw new Error("TARGET is required.");
-            }
-
-            if (!/^https?:\/\//i.test(target)) {
-              throw new Error(
-                "TARGET must be a valid HTTP or HTTPS URL."
-              );
-            }
-
             const browser = await chromium.launch({
               headless: true
             });
 
-            const context = await browser.newContext();
+            const context = await browser.newContext({
+              storageState: "storage-state.json"
+            });
 
             const page = await context.newPage();
 
-            const requests = new Map();
+            const endpoints = new Map();
+            const headers = new Map();
 
-            // Capture XHR and Fetch requests
             page.on("request", request => {
-              const resourceType = request.resourceType();
+              const type = request.resourceType();
 
-              if (
-                resourceType === "xhr" ||
-                resourceType === "fetch"
-              ) {
-                const url = request.url();
+              if (type !== "xhr" && type !== "fetch") return;
 
-                if (!requests.has(url)) {
-                  requests.set(url, {
-                    url: url,
-                    method: request.method(),
-                    resourceType: resourceType
-                  });
-                }
-              }
+              const url = request.url();
+
+              endpoints.set(url, {
+                url,
+                method: request.method(),
+                resourceType: type
+              });
+
+              headers.set(url, {
+                url,
+                method: request.method(),
+                headers: sanitize(request.headers())
+              });
             });
 
-            console.log(`Opening: ${target}`);
+            await page.goto(process.env.TARGET, {
+              waitUntil: "domcontentloaded",
+              timeout: 30000
+            });
 
-            try {
-              await page.goto(target, {
-                waitUntil: "domcontentloaded",
-                timeout: 30000
-              });
-            } catch (error) {
-              console.log(
-                `Navigation warning: ${error.message}`
-              );
-            }
+            await page.waitForTimeout(7000);
 
-            // Wait for JavaScript/API requests
-            await page.waitForTimeout(5000);
-
-            const endpoints = Array.from(requests.values());
-
-            // Create endpoints.json
             fs.writeFileSync(
               "endpoints.json",
-              JSON.stringify(endpoints, null, 2),
-              "utf8"
+              JSON.stringify([...endpoints.values()], null, 2)
             );
 
-            console.log(
-              `Captured ${endpoints.length} API endpoints.`
-            );
-
-            console.log(
-              JSON.stringify(endpoints, null, 2)
+            fs.writeFileSync(
+              "headers.json",
+              JSON.stringify([...headers.values()], null, 2)
             );
 
             await browser.close();
@@ -132,48 +116,21 @@ jobs:
 
           node capture.js
 
-      # -----------------------------
-      # 5. Show generated file
-      # -----------------------------
-      - name: Show endpoints.json
-        run: |
-          echo "===== endpoints.json ====="
-          cat endpoints.json
+      - name: Delete session
+        if: always()
+        run: rm -f storage-state.json
 
-      # -----------------------------
-      # 6. Configure Git
-      # -----------------------------
-      - name: Configure Git
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      # -----------------------------
-      # 7. Commit endpoints.json
-      # -----------------------------
-      - name: Commit endpoints.json
-        run: |
-          git add endpoints.json
+          git add endpoints.json headers.json
 
           if git diff --cached --quiet; then
-            echo "No changes detected."
+            echo "No changes."
             exit 0
           fi
 
-          git commit -m "Update API endpoints"
-
-      # -----------------------------
-      # 8. Push to repository
-      # -----------------------------
-      - name: Push changes
-        run: |
+          git commit -m "Update API endpoint data"
           git push
-
-      # -----------------------------
-      # 9. Upload artifact
-      # -----------------------------
-      - name: Upload endpoints.json
-        uses: actions/upload-artifact@v4
-        with:
-          name: api-endpoints
-          path: endpoints.json
