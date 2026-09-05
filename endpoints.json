@@ -1,0 +1,197 @@
+[
+  {
+    "url": "https://o4511211351048192.ingest.us.sentry.io/api/4511211354783744/envelope/?sentry_version=7&sentry_key=b158ba672c4816c059e853ae245a877d&sentry_client=sentry.javascript.nextjs%2F10.48.0",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://content-prod.services.toffeelive.com/toffee/BD/DK/web/rail/generic/editorial-dynamic/55fdb2bedaca2de399b470fb0ce14117",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://content-prod.services.toffeelive.com/toffee/BD/DK/web/rail/generic/editorial-dynamic/911e8f640af3a8892b628714d4acc133",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://content-prod.services.toffeelive.com/toffee/BD/DK/web/rail/generic/editorial-dynamic/be7d42854f019db42fbc22153674b888",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://content-prod.services.toffeelive.com/toffee/BD/DK/web/rail/generic/editorial-dynamic/cceb01a3ecb01516539b0adad38c1400",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://content-prod.services.toffeelive.com/toffee/BD/DK/web/rail/generic/editorial-dynamic/08d90cecf964eb9a5f6be2e1887066fd",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://content-prod.services.toffeelive.com/toffee/BD/DK/web/rail/generic/editorial-dynamic/cb7ea308e7742680ea8df1aae153bc9b",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://content-prod.services.toffeelive.com/toffee/BD/DK/web/rail/generic/editorial-dynamic/9988b22058e87ba742a8d734e640e759",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://content-prod.services.toffeelive.com/toffee/BD/DK/web/rail/generic/editorial-dynamic/84a2451df95d2eb3d2b0d09c5fc34fb1",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://content-prod.services.toffeelive.com/toffee/BD/DK/web/rail/generic/editorial-dynamic/36eff4e5ed817e63c4a0859a0e11f1d5",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCv82eHAx0LaNvcJqOwumExKJen0_CzT1M",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en?_rsc=Lyst6QA1NcPcFUAu",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/live?_rsc=Lyst6QA1NcPcFUAu",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/sports?_rsc=Lyst6QA1NcPcFUAu",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/drama?_rsc=Lyst6QA1NcPcFUAu",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://entitlement-prod.services.toffeelive.com/toffee/BD/DK/web/playback/wHLVIJ4B7a1HdMSjaGLJ",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://firebase.googleapis.com/v1alpha/projects/-/apps/1:531986530681:web:32347312feca0d5dc62fa8/webConfig",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://firebaseinstallations.googleapis.com/v1/projects/prj-tof-analytics/installations",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://www.google.com/measurement/conversion?random=1788612245886&cv=11&tid=G-02M4D9SN5F&fst=1788612245886&fmt=8&en=session_start&gtm=45je6921v9189838959za200zb9193602521zd9193602521xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&gacid=2059713434.1788612246&frm=0&tiba=NTV&gtm_ee=1&npa=0&pscdl=noapi&auid=1075298618.1788612246&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=11",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je6921v9189838959za200zb9193602521zd9193602521&_p=1788612242605&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=128724570&_eu=AAAAAGAC&_fid=fDaxGcWaqbgww4lu1bRaz9&_prs=ok&cid=2059713434.1788612246&ec_mode=a&frm=0&pscdl=noapi&rcb=11&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1788612245&sct=1&seg=0&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&dt=NTV&en=page_view&_fv=1&_nsi=1&_ss=2&_ee=1&ep.origin=firebase&tfd=4881",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/plans?_rsc=Lyst6QA1NcPcFUAu",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/live?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/sports?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyCv82eHAx0LaNvcJqOwumExKJen0_CzT1M",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://www.google.com/measurement/1p-conversion/?random=71457197&cv=11&tid=G-02M4D9SN5F&fst=1788612245886&fmt=8&en=session_start&gtm=45je6921v9189838959za200zb9193602521zd9193602521xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&gacid=2059713434.1788612246&frm=0&tiba=NTV&gtm_ee=1&npa=0&pscdl=noapi&auid=1075298618.1788612246&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=11&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgji6rECCOjusQIIkuuxAgjJ47ECCJfUsQIIyduxAgjN5rECCLHhsQIIs-GxAgim3bECCLDesQIIgNuxAgjN4bEC&cerd=Cgj_r74t59W-LQ&fsk=ChEI8Pvu1AYQs9rt2tbvs4jvARIsALa_ygPC0jV0WmgmPXQoHD-XAJ8tw_5ZecU841L7xeeRwOHOHJLWGgaY0w4aAveh&pscrd=IhMIlJu97LvXlgMVaO_OAB0PMBx7OhdodHRwczovL3RvZmZlZWxpdmUuY29tL0JWQ2hBSThQdnUxQVlRb3RtOXc1dVVpYzhHRWl3QU03TnJfZmpvY0hhcFoxTUg2bDdZYUE0R2xmcDJkcS1NQjhSZzBienE4S2FEb3dENjkwY3owLTZLM1F6DAgJYggIABAAGAAgAA",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/n_tv/playlist.m3u8?nocache=1788612246180",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/watch/JS1AqZgBNnOkwJLWlwg-?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/watch/Mi1QqZgBNnOkwJLWxggo?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/watch/Pi1TqZgBNnOkwJLWVggf?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/watch/OyEz-ZgBEef-9-uVnhcx?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/watch/6CHi_5gBEef-9-uV-Bx_?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/watch/6y_b4poBNnOkwJLWmn7X?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/watch/li_llpsBNnOkwJLWzf3P?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/watch/V__o054BObUt2AG6LL5C?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/drama?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/movies?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/web-series?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://toffeelive.com/en/plans?_rsc=TTJ1s5dTfNFF6o-3",
+    "method": "GET",
+    "resourceType": "fetch"
+  }
+]
