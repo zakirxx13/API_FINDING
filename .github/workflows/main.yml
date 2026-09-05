@@ -1,7 +1,12 @@
-name: Capture Authorized API
+name: API Endpoint Finder
 
 on:
   workflow_dispatch:
+    inputs:
+      target:
+        description: "Authorized website URL"
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -14,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -25,41 +30,21 @@ jobs:
           npm install playwright
           npx playwright install --with-deps chromium
 
-      - name: Create storage state
+      - name: Verify AUTH_D
         env:
           AUTH_D: ${{ secrets.AUTH_D }}
         run: |
-          printf '%s' "$AUTH_D" > storage-state.json
+          if [ -z "$AUTH_D" ]; then
+            echo "AUTH_D is empty or unavailable."
+            exit 1
+          fi
 
-          node - <<'NODE'
-          const fs = require("fs");
-
-          try {
-            const data = JSON.parse(
-              fs.readFileSync("storage-state.json", "utf8")
-            );
-
-            if (
-              typeof data !== "object" ||
-              data === null ||
-              !Array.isArray(data.cookies)
-            ) {
-              throw new Error(
-                "AUTH_D is valid JSON, but it is not a Playwright storageState."
-              );
-            }
-
-            console.log("Valid Playwright storage state.");
-          } catch (err) {
-            console.error("Invalid AUTH_D:");
-            console.error(err.message);
-            process.exit(1);
-          }
-          NODE
+          echo "AUTH_D secret is available."
+          echo "Token value will not be printed."
 
       - name: Create capture script
         env:
-          TARGET: "https://YOUR-OWN-AUTHORIZED-SITE.example"
+          TARGET: ${{ inputs.target }}
         run: |
           cat > capture.js <<'EOF'
           const { chromium } = require("playwright");
@@ -75,25 +60,24 @@ jobs:
           ]);
 
           function sanitize(headers) {
-            return Object.fromEntries(
-              Object.entries(headers).map(([key, value]) => [
-                key,
+            const output = {};
+
+            for (const [key, value] of Object.entries(headers)) {
+              output[key] =
                 sensitive.has(key.toLowerCase())
                   ? "[REDACTED]"
-                  : value
-              ])
-            );
+                  : value;
+            }
+
+            return output;
           }
 
-          (async () => {
+          async function main() {
             const browser = await chromium.launch({
               headless: true
             });
 
-            const context = await browser.newContext({
-              storageState: "storage-state.json"
-            });
-
+            const context = await browser.newContext();
             const page = await context.newPage();
 
             const endpoints = new Map();
@@ -109,19 +93,19 @@ jobs:
               const url = request.url();
 
               endpoints.set(url, {
-                url,
+                url: url,
                 method: request.method(),
                 resourceType: type
               });
 
               headers.set(url, {
-                url,
+                url: url,
                 method: request.method(),
                 headers: sanitize(request.headers())
               });
             });
 
-            console.log(`Opening: ${process.env.TARGET}`);
+            console.log("Opening authorized target...");
 
             await page.goto(process.env.TARGET, {
               waitUntil: "domcontentloaded",
@@ -149,11 +133,13 @@ jobs:
             );
 
             console.log(
-              `Captured ${endpoints.size} XHR/fetch endpoints.`
+              `Captured ${endpoints.size} XHR/fetch requests.`
             );
 
             await browser.close();
-          })().catch(error => {
+          }
+
+          main().catch(error => {
             console.error(error);
             process.exit(1);
           });
@@ -162,11 +148,11 @@ jobs:
       - name: Run capture
         run: node capture.js
 
-      - name: Remove session data
+      - name: Delete temporary script
         if: always()
-        run: rm -f storage-state.json
+        run: rm -f capture.js
 
-      - name: Commit results
+      - name: Commit JSON files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email \
@@ -179,5 +165,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update API endpoint data"
+          git commit -m "Update API endpoints"
           git push
