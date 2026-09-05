@@ -25,15 +25,41 @@ jobs:
           npm install playwright
           npx playwright install --with-deps chromium
 
-      - name: Create temporary session
+      - name: Create storage state
         env:
           AUTH_D: ${{ secrets.AUTH_D }}
         run: |
           printf '%s' "$AUTH_D" > storage-state.json
 
+          node - <<'NODE'
+          const fs = require("fs");
+
+          try {
+            const data = JSON.parse(
+              fs.readFileSync("storage-state.json", "utf8")
+            );
+
+            if (
+              typeof data !== "object" ||
+              data === null ||
+              !Array.isArray(data.cookies)
+            ) {
+              throw new Error(
+                "AUTH_D is valid JSON, but it is not a Playwright storageState."
+              );
+            }
+
+            console.log("Valid Playwright storage state.");
+          } catch (err) {
+            console.error("Invalid AUTH_D:");
+            console.error(err.message);
+            process.exit(1);
+          }
+          NODE
+
       - name: Create capture script
         env:
-          TARGET: "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ"
+          TARGET: "https://YOUR-OWN-AUTHORIZED-SITE.example"
         run: |
           cat > capture.js <<'EOF'
           const { chromium } = require("playwright");
@@ -76,7 +102,9 @@ jobs:
             page.on("request", request => {
               const type = request.resourceType();
 
-              if (type !== "xhr" && type !== "fetch") return;
+              if (type !== "xhr" && type !== "fetch") {
+                return;
+              }
 
               const url = request.url();
 
@@ -93,6 +121,8 @@ jobs:
               });
             });
 
+            console.log(`Opening: ${process.env.TARGET}`);
+
             await page.goto(process.env.TARGET, {
               waitUntil: "domcontentloaded",
               timeout: 30000
@@ -102,28 +132,45 @@ jobs:
 
             fs.writeFileSync(
               "endpoints.json",
-              JSON.stringify([...endpoints.values()], null, 2)
+              JSON.stringify(
+                [...endpoints.values()],
+                null,
+                2
+              )
             );
 
             fs.writeFileSync(
               "headers.json",
-              JSON.stringify([...headers.values()], null, 2)
+              JSON.stringify(
+                [...headers.values()],
+                null,
+                2
+              )
+            );
+
+            console.log(
+              `Captured ${endpoints.size} XHR/fetch endpoints.`
             );
 
             await browser.close();
-          })();
+          })().catch(error => {
+            console.error(error);
+            process.exit(1);
+          });
           EOF
 
-          node capture.js
+      - name: Run capture
+        run: node capture.js
 
-      - name: Delete session
+      - name: Remove session data
         if: always()
         run: rm -f storage-state.json
 
-      - name: Commit and push
+      - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add endpoints.json headers.json
 
