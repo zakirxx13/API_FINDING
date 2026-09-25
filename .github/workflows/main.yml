@@ -32,7 +32,7 @@ jobs:
           const fs = require("fs");
 
           const TARGET =
-            "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ";
+            "https://toffeelive.com/en/watch/kK2aX5UBrjBfS2_RBcKf";
 
           const sensitive = new Set([
             "bal"
