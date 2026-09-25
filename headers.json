@@ -123,7 +123,7 @@
     "url": "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCv82eHAx0LaNvcJqOwumExKJen0_CzT1M",
     "method": "POST",
     "headers": {
-      "x-firebase-client": "eyJ2ZXJzaW9uIjoyLCJoZWFydGJlYXRzIjpbeyJhZ2VudCI6ImZpcmUtY29yZS8wLjE0LjQgZmlyZS1jb3JlLWVzbTIwMjAvMC4xNC40IGZpcmUtanMvIGZpcmUtaWlkLzAuNi4xOSBmaXJlLWlpZC1lc20yMDIwLzAuNi4xOSBmaXJlLWFuYWx5dGljcy8wLjEwLjE5IGZpcmUtYW5hbHl0aWNzLWVzbTIwMjAvMC4xMC4xOSBmaXJlLWpzLWFsbC1hcHAvMTIuNC4wIGZpcmUtYXV0aC8xLjExLjAgZmlyZS1hdXRoLWVzbTIwMjAvMS4xMS4wIGZpcmUtZnN0LzQuOS4yIGZpcmUtZnN0LWVzbTIwMjAvNC45LjIiLCJkYXRlcyI6WyIyMDI2LTA5LTIwIl19XX0",
+      "x-firebase-client": "eyJ2ZXJzaW9uIjoyLCJoZWFydGJlYXRzIjpbeyJhZ2VudCI6ImZpcmUtY29yZS8wLjE0LjQgZmlyZS1jb3JlLWVzbTIwMjAvMC4xNC40IGZpcmUtanMvIGZpcmUtaWlkLzAuNi4xOSBmaXJlLWlpZC1lc20yMDIwLzAuNi4xOSBmaXJlLWFuYWx5dGljcy8wLjEwLjE5IGZpcmUtYW5hbHl0aWNzLWVzbTIwMjAvMC4xMC4xOSBmaXJlLWpzLWFsbC1hcHAvMTIuNC4wIGZpcmUtYXV0aC8xLjExLjAgZmlyZS1hdXRoLWVzbTIwMjAvMS4xMS4wIGZpcmUtZnN0LzQuOS4yIGZpcmUtZnN0LWVzbTIwMjAvNC45LjIiLCJkYXRlcyI6WyIyMDI2LTA5LTI1Il19XX0",
       "sec-ch-ua-platform": "\"Linux\"",
       "referer": "",
       "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
@@ -135,79 +135,11 @@
     }
   },
   {
-    "url": "https://toffeelive.com/en?_rsc=Lyst6QA1NcPcFUAu",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "next-router-segment-prefetch": "/_tree",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-prefetch": "1",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-84e2ec4129492557-0",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
-    "url": "https://toffeelive.com/en/live?_rsc=Lyst6QA1NcPcFUAu",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "next-router-segment-prefetch": "/_tree",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-prefetch": "1",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-9b56706cfd5b0c83-0",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
-    "url": "https://toffeelive.com/en/sports?_rsc=Lyst6QA1NcPcFUAu",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "next-router-segment-prefetch": "/_tree",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-prefetch": "1",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-a140f385ed3deb26-0",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
-    "url": "https://toffeelive.com/en/drama?_rsc=Lyst6QA1NcPcFUAu",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "next-router-segment-prefetch": "/_tree",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-prefetch": "1",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-bb873c2450e90a0d-0",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
     "url": "https://entitlement-prod.services.toffeelive.com/toffee/BD/DK/web/playback/wHLVIJ4B7a1HdMSjaGLJ",
     "method": "POST",
     "headers": {
       "sec-ch-ua-platform": "\"Linux\"",
-      "authorization": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3RvZmZlZWxpdmUuY29tIiwiY291bnRyeSI6IlVTIiwiZF9pZCI6IjU5YWJjNmYxLTliMmYtNGQ4OS1iNzE0LWI0YTVjNzNjNWVkYyIsImV4cCI6MTc5MjUwMjIyMiwiaWF0IjoxNzg5ODcyNDIyLCJpc3MiOiJ0b2ZmZWVsaXZlLmNvbSIsImp0aSI6Ijc2OTM2YjY1LTEzMTQtNGE3NS1hNjRhLWU2MDZiMTkwZWVlMF8xNzg5ODcyNDIyIiwicHJvdmlkZXIiOiJ0b2ZmZWUiLCJyX2lkIjoiNTlhYmM2ZjEtOWIyZi00ZDg5LWI3MTQtYjRhNWM3M2M1ZWRjIiwic19pZCI6IjU5YWJjNmYxLTliMmYtNGQ4OS1iNzE0LWI0YTVjNzNjNWVkYyIsInRva2VuIjoiYWNjZXNzIiwidHlwZSI6ImRldmljZSJ9.c5qn_Z73z4CPhLoTDqq4tWeILMk6qGN2BzsHnyvbcMAk43l1gbslgz9VHL6b6ajTB3GYchxVukls0T2JY54d6g",
+      "authorization": "Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3RvZmZlZWxpdmUuY29tIiwiY291bnRyeSI6IlVTIiwiZF9pZCI6ImI2ZGQxYjMwLTU5NmUtNDljYS1iMmY1LTMxYWE0NmRmMTA0OSIsImV4cCI6MTc5Mjk1ODY0OSwiaWF0IjoxNzkwMzI4ODQ5LCJpc3MiOiJ0b2ZmZWVsaXZlLmNvbSIsImp0aSI6ImI4MzVmNjMxLWJhMDItNGQ4OC1iMDEyLWM1ZmE3YjBjNDJmOF8xNzkwMzI4ODQ5IiwicHJvdmlkZXIiOiJ0b2ZmZWUiLCJyX2lkIjoiYjZkZDFiMzAtNTk2ZS00OWNhLWIyZjUtMzFhYTQ2ZGYxMDQ5Iiwic19pZCI6ImI2ZGQxYjMwLTU5NmUtNDljYS1iMmY1LTMxYWE0NmRmMTA0OSIsInRva2VuIjoiYWNjZXNzIiwidHlwZSI6ImRldmljZSJ9.Su_CKSwrQc4-zWqFYtJ3ESuEs7jgbj_CwXvlq9DXdlnXd346i5Or-jzK_GYTBmGhPxXbPnRZkyIOIPqRFucHJg",
       "referer": "https://toffeelive.com/",
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
       "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
@@ -243,7 +175,7 @@
     }
   },
   {
-    "url": "https://www.google.com/measurement/conversion?random=1789872427666&cv=11&tid=G-02M4D9SN5F&fst=1789872427666&fmt=8&en=session_start&gtm=45je69g1v9189838959za200zb9193602521zd9193602521xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120847435~121153387&u_w=1280&u_h=720&url=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&gacid=2058292580.1789872428&frm=0&tiba=NTV&gtm_ee=1&npa=0&pscdl=noapi&auid=872184227.1789872428&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=13",
+    "url": "https://www.google.com/measurement/conversion?random=1790328853993&cv=11&tid=G-02M4D9SN5F&fst=1790328853993&fmt=8&en=session_start&gtm=45je69n1h1v9189838959za200zb9193602521zd9193602521xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118131810~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&gacid=1924537344.1790328854&hn=www.googleadservices.com&frm=0&tiba=NTV&npa=0&pscdl=noapi&auid=1689321133.1790328854&gtm_ee=1&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=5",
     "method": "POST",
     "headers": {
       "sec-ch-ua-platform": "\"Linux\"",
@@ -254,7 +186,7 @@
     }
   },
   {
-    "url": "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je69g1v9189838959za200zb9193602521zd9193602521xf1&_p=1789872424378&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1627249094&_eu=AAAAAGAC&_fid=fOjBbQovizyafm-J_Dnmwh&_prs=ok&cid=2058292580.1789872428&ec_mode=a&frm=0&pscdl=noapi&rcb=13&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120847435~121153387&sid=1789872427&sct=1&seg=0&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&dt=NTV&en=page_view&_fv=1&_nsi=1&_ss=2&_ee=1&ep.origin=firebase&tfd=5038",
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je69n1h1v9189838959za200zb9193602521zd9193602521xf1&_p=1790328850762&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1455844228&_eu=AAAAAGAC&_fid=fVuI3ZHSe1FO6lseT4oHBV&_prs=ok&cid=1924537344.1790328854&ec_mode=a&frm=0&pscdl=noapi&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=115938465~115938468~118131810~118897920~118897930~120213116~120385423~120469145~120469153&sid=1790328853&sct=1&seg=0&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&dt=NTV&en=page_view&_fv=1&_nsi=1&_ss=2&_ee=1&ep.origin=firebase&tfd=4574",
     "method": "POST",
     "headers": {
       "sec-ch-ua-platform": "\"Linux\"",
@@ -262,74 +194,6 @@
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
       "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
       "sec-ch-ua-mobile": "?0"
-    }
-  },
-  {
-    "url": "https://toffeelive.com/en/movies?_rsc=Lyst6QA1NcPcFUAu",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "next-router-segment-prefetch": "/_tree",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-prefetch": "1",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-ae52af5d26499c32-0",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
-    "url": "https://toffeelive.com/en/plans?_rsc=Lyst6QA1NcPcFUAu",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "next-router-segment-prefetch": "/_tree",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-prefetch": "1",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-84c8cec769fb5ac0-0",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
-    "url": "https://toffeelive.com/en?_rsc=TTJ1s5dTfNFF6o-3",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-state-tree": "%5B%22%22%2C%7B%7D%2Cnull%2C%22metadata-only%22%5D",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-80cceb2c00a146ab-0",
-      "next-router-prefetch": "1",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
-    "url": "https://toffeelive.com/en/live?_rsc=TTJ1s5dTfNFF6o-3",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-state-tree": "%5B%22%22%2C%7B%7D%2Cnull%2C%22metadata-only%22%5D",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-a5cfe0cf5eb667bb-0",
-      "next-router-prefetch": "1",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
     }
   },
   {
@@ -347,7 +211,7 @@
     }
   },
   {
-    "url": "https://www.google.com/measurement/1p-conversion/?random=1160324182&cv=11&tid=G-02M4D9SN5F&fst=1789872427666&fmt=8&en=session_start&gtm=45je69g1v9189838959za200zb9193602521zd9193602521xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120847435~121153387&u_w=1280&u_h=720&url=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&gacid=2058292580.1789872428&frm=0&tiba=NTV&gtm_ee=1&npa=0&pscdl=noapi&auid=872184227.1789872428&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=13&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIzeaxAgix4bECCLPhsQIIpt2xAgiw3rECCIDbsQIIzeGxAgjL4bEC&cerd=ChCDsL4tleS-Lbnrvi2d6bc4&fsk=ChEI8OW41QYQ3PXM5-nPk6uHARIsANKH-MWS1F6xhBgH4WG2VpHBrgtnAUKxfpuqC6Rv3_E4mmcVQ3u92SP_RoYaAl14&pscrd=IhMIjbP9sZL8lgMVvuHOAB11piyrOhdodHRwczovL3RvZmZlZWxpdmUuY29tL0JWQ2hBSThPVzQxUVlRMHBLSW1ONkxscVFGRWl3QW90dmNKaVNoZFY0V0RHbEY3eGJuQ2o4NVlPUkVIU0VUN1BsazdKNHZOTU1sZExpR3pwZkRBMlZncnd6DAgJYggIABAAGAAgAA",
+    "url": "https://www.google.com/measurement/1p-conversion/?random=709988456&cv=11&tid=G-02M4D9SN5F&fst=1790328853993&fmt=8&en=session_start&gtm=45je69n1h1v9189838959za200zb9193602521zd9193602521xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118131810~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&gacid=1924537344.1790328854&hn=www.googleadservices.com&frm=0&tiba=NTV&npa=0&pscdl=noapi&auid=1689321133.1790328854&gtm_ee=1&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=5&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgj02rECCOLqsQII6O6xAgiS67ECCMnjsQIIl9SxAgjJ27ECCM3msQIIjuexAgim3bECCLDesQIIgNuxAgjN4bEC&cerd=ChCCsL4tyOy-Ldjtvi2d6bc4&fsk=ChAI8LfY1QYQivWrveX_5JYcEiwAvrsVs28yAKvJg5ge7NEHeq_cbPgvFDWli5Btwh27fg1r9oWyd0SQYMBRxxoCytU&pscrd=IhMIxpyC27aJlwMVXevOAB0GnAoSOhdodHRwczovL3RvZmZlZWxpdmUuY29tL0JWQ2hBSThMZlkxUVlRejdPY3dlRFFxN2NvRWl3QVBoYnQ4RmdURFJackFRNWlVQV9mUE9rdGV0STdoaHpWV1A5V2g0Y004aG91WFYwdmlYVFdFMUVpVXd6DAgJYggIABAAGAAgAA",
     "method": "GET",
     "headers": {
       "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
@@ -355,58 +219,7 @@
     }
   },
   {
-    "url": "https://toffeelive.com/en/sports?_rsc=TTJ1s5dTfNFF6o-3",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-state-tree": "%5B%22%22%2C%7B%7D%2Cnull%2C%22metadata-only%22%5D",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-ae207deb4e5d9119-0",
-      "next-router-prefetch": "1",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
-    "url": "https://toffeelive.com/en/drama?_rsc=TTJ1s5dTfNFF6o-3",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-state-tree": "%5B%22%22%2C%7B%7D%2Cnull%2C%22metadata-only%22%5D",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-8a77b059d6132d12-0",
-      "next-router-prefetch": "1",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
-    "url": "https://toffeelive.com/en/watch/JS1AqZgBNnOkwJLWlwg-?_rsc=TTJ1s5dTfNFF6o-3",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-state-tree": "%5B%22%22%2C%7B%7D%2Cnull%2C%22metadata-only%22%5D",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-9200f93f8e44c6fe-0",
-      "next-router-prefetch": "1",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
-    "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/n_tv/playlist.m3u8?nocache=1789872428069",
+    "url": "https://prod-linear-media.toffeelive.com/cdn/live/n_tv/playlist.m3u8?edge-cache-token=Expires=1790332454~Starts=1790328854~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiYjZkZDFiMzAtNTk2ZS00OWNhLWIyZjUtMzFhYTQ2ZGYxMDQ5In0~Signature=6eiZn9cVaaC3wjXm2PgTxAVSnLGBf_okUfubFnyn3o5PXXOwN8g2qm4_3T4Y-LLwUNipShZGVqAsJcaz6faqBg&nocache=1790328854402",
     "method": "GET",
     "headers": {
       "sec-ch-ua-platform": "\"Linux\"",
@@ -417,75 +230,29 @@
     }
   },
   {
-    "url": "https://toffeelive.com/en/watch/HHnAgJkBcqxnFHJBabwO?_rsc=TTJ1s5dTfNFF6o-3",
+    "url": "https://prod-linear-media.toffeelive.com/cdn/live/n_tv/1080/1080.m3u8?hdntl=Expires=1790415254~_GO=Generated~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiYjZkZDFiMzAtNTk2ZS00OWNhLWIyZjUtMzFhYTQ2ZGYxMDQ5In0~Signature=AZR2wJo0qS4R0C2K3Lj6G3xAdjgmVI9XllgAEjAozzMvVAEoB34APVuSMgQmXuUkZQ_lgho-Q4wO3i3Zf2KkAyLkb18A&nocache=1790328854460",
     "method": "GET",
     "headers": {
-      "rsc": "1",
       "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
+      "referer": "https://toffeelive.com/",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
       "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-state-tree": "%5B%22%22%2C%7B%7D%2Cnull%2C%22metadata-only%22%5D",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-b36d09a3856e421d-0",
-      "next-router-prefetch": "1",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
+      "sec-ch-ua-mobile": "?0"
     }
   },
   {
-    "url": "https://toffeelive.com/en/movies?_rsc=TTJ1s5dTfNFF6o-3",
+    "url": "https://prod-linear-media.toffeelive.com/cdn/live/n_tv/1080/1790328831770.ts?hdntl=Expires=1790415254~_GO=Generated~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiYjZkZDFiMzAtNTk2ZS00OWNhLWIyZjUtMzFhYTQ2ZGYxMDQ5In0~Signature=AZR2wJo0qS4R0C2K3Lj6G3xAdjgmVI9XllgAEjAozzMvVAEoB34APVuSMgQmXuUkZQ_lgho-Q4wO3i3Zf2KkAyLkb18A",
     "method": "GET",
     "headers": {
-      "rsc": "1",
       "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
+      "referer": "https://toffeelive.com/",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
       "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-state-tree": "%5B%22%22%2C%7B%7D%2Cnull%2C%22metadata-only%22%5D",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-b4a8f1f82c7cbda4-0",
-      "next-router-prefetch": "1",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
+      "sec-ch-ua-mobile": "?0"
     }
   },
   {
-    "url": "https://toffeelive.com/en/web-series?_rsc=TTJ1s5dTfNFF6o-3",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-state-tree": "%5B%22%22%2C%7B%7D%2Cnull%2C%22metadata-only%22%5D",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-b421dd70a01110f2-0",
-      "next-router-prefetch": "1",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
-    "url": "https://toffeelive.com/en/plans?_rsc=TTJ1s5dTfNFF6o-3",
-    "method": "GET",
-    "headers": {
-      "rsc": "1",
-      "sec-ch-ua-platform": "\"Linux\"",
-      "referer": "https://toffeelive.com/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
-      "sec-ch-ua-mobile": "?0",
-      "next-router-state-tree": "%5B%22%22%2C%7B%7D%2Cnull%2C%22metadata-only%22%5D",
-      "baggage": "sentry-environment=production,sentry-release=v5.1.0-hotfix.1,sentry-public_key=b158ba672c4816c059e853ae245a877d,sentry-trace_id=6eeca8ffff29cd7fa61e3e6f7a6a8446,sentry-org_id=4511211351048192,sentry-sampled=false,sentry-sample_rand=0.2892007336447131,sentry-sample_rate=0.05",
-      "sentry-trace": "6eeca8ffff29cd7fa61e3e6f7a6a8446-b02b8149d483171c-0",
-      "next-router-prefetch": "1",
-      "next-url": "/en/watch/wHLVIJ4B7a1HdMSjaGLJ",
-      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36"
-    }
-  },
-  {
-    "url": "https://api-js.mixpanel.com/track/?verbose=1&ip=1&_=1789872431082",
+    "url": "https://api-js.mixpanel.com/track/?verbose=1&ip=1&_=1790328857601",
     "method": "POST",
     "headers": {
       "sec-ch-ua-platform": "\"Linux\"",
@@ -497,7 +264,30 @@
     }
   },
   {
-    "url": "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je69g1v9189838959za200zb9193602521zd9193602521xf1&_p=1789872424378&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1627249094&_eu=AAAAAGQC&_fid=fOjBbQovizyafm-J_Dnmwh&cid=2058292580.1789872428&frm=0&pscdl=noapi&rcb=13&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en&gaf=2&_s=2&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~120847435~121153387&dt=NTV&dp=%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&sid=1789872427&sct=1&seg=0&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&en=page_viewed&_ee=1&ep.origin=firebase&ep.provider_id=toffee&ep.app_name=toffee-web-app&ep.app_version=5.1.0&ep.device_id=343dccc0-dacf-4352-bd76-c5652e03f63e&ep.subscriber_type=ANONYMOUS&ep.connection=cellular&ep.page_name=Watch%20Details&ep.page_url=https%3A%2F%2Ftoffeelive.com%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&ep.page_id=wHLVIJ4B7a1HdMSjaGLJ&_et=4&tfd=10046",
+    "url": "https://prod-linear-media.toffeelive.com/cdn/live/n_tv/1080/keys/1790328705837.key?hdntl=Expires=1790415254~_GO=Generated~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiYjZkZDFiMzAtNTk2ZS00OWNhLWIyZjUtMzFhYTQ2ZGYxMDQ5In0~Signature=AZR2wJo0qS4R0C2K3Lj6G3xAdjgmVI9XllgAEjAozzMvVAEoB34APVuSMgQmXuUkZQ_lgho-Q4wO3i3Zf2KkAyLkb18A",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "referer": "https://toffeelive.com/",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://client-es-logger-270024867186.asia-southeast1.run.app/clientEsLogger",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "referer": "https://toffeelive.com/",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+      "content-type": "application/json",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je69n1h1v9189838959za200zb9193602521zd9193602521xf1&_p=1790328850762&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1455844228&_eu=AAAAAGQC&_fid=fVuI3ZHSe1FO6lseT4oHBV&cid=1924537344.1790328854&frm=0&pscdl=noapi&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en&gaf=2&_s=2&tag_exp=115938465~115938468~118131810~118897920~118897930~120213116~120385423~120469145~120469153&dt=NTV&dp=%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&sid=1790328853&sct=1&seg=0&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&en=page_viewed&_ee=1&ep.origin=firebase&ep.provider_id=toffee&ep.app_name=toffee-web-app&ep.app_version=5.2.0&ep.device_id=933faf30-f190-460a-be4e-c655d004bb89&ep.subscriber_type=ANONYMOUS&ep.connection=cellular&ep.page_name=Watch%20Details&ep.page_url=https%3A%2F%2Ftoffeelive.com%2Fwatch%2FwHLVIJ4B7a1HdMSjaGLJ&ep.page_id=wHLVIJ4B7a1HdMSjaGLJ&_et=4&tfd=9583",
     "method": "POST",
     "headers": {
       "sec-ch-ua-platform": "\"Linux\"",
